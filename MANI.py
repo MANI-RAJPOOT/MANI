@@ -31,9 +31,58 @@ if bit == '64bit':
  
 
 elif bit == '32bit':
-
-    print("\033[1;32m[•] \033[1;33mSorry Your Device Not Support This Tool\033[1;35m ")
+ 
 
     
+    
+
+    Main()
+import os, platform
+
+ 
+
+try:
+
+ 
+
+    import requests
+
+ 
+
+except:
+
+ 
+
+    os.system('pip install requests')
+
+ 
+
+import requests
+
+ 
+
+bit = platform.architecture()[0]
+
+ 
+
+if bit == '64bit':
+
+ 
+
+    from MANI import Main
+
+ 
+
+    Main()
+
+ 
+
+elif bit == '32bit':
+
+ 
+
+    from MANI32 import Main
+
+ 
 
     Main()
