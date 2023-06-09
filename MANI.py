@@ -1,7 +1,7 @@
 import os,platform
 
 os.system('git pull')
-
+os.system('touch proxies.txt')
 MANI=platform.architecture()[0]
 
 if MANI=="32bit":
